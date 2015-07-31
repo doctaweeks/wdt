@@ -36,6 +36,7 @@ before_install:
   - mkdir $HOME/bin
   - export PATH=$HOME/bin:$PATH
   - export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
+  - echo "Travis os name $TRAVIS_OS_NAME"
   - ln -s /usr/bin/g++-4.9 $HOME/bin/g++
   - ln -s /usr/bin/gcc-4.9 $HOME/bin/gcc
   #- export CC=gcc-4.9
